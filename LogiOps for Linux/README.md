@@ -1,6 +1,6 @@
 # Logitech Options for Linux
 
-Basic setup for Logitech MX Master. For more config options, please visit https://wiki.archlinux.org/title/Logitech_MX_Master.
+Basic setup for Logitech MX Master. For more configuration options, please visit https://wiki.archlinux.org/title/Logitech_MX_Master.
 
 For proper operation, delay the start of service in `/usr/lib/systemd/system/logid.service`:
 
