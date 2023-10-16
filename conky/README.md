@@ -6,7 +6,7 @@ Latest working GNOME version: 45.0
 
 Conky install (arch): conky-lua-nv
 
-Required fonts (need to be installed):
+Required fonts:
 
 - Noto Nerd Font
 - feather
