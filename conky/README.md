@@ -9,4 +9,6 @@ Conky install (arch): conky-lua-nv
 Required fonts (need to be installed):
 
 - Noto Nerd Font
-- feather (provided in fonts)
+- feather
+
+Fonts need to be located in `/home/username/.fonts`.
