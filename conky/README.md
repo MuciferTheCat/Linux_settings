@@ -16,4 +16,4 @@ Required fonts:
 - Symbols Nerd Font
 - Font Awesome 6 Brands
 
-Fonts need to be located in `/home/username/.fonts`.
+Fonts need to be located in `/home/<username>/.fonts`.
