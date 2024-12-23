@@ -1,4 +1,4 @@
-# Guide for installing Arch (BTRFS, Hyprland)
+# Guide for manual Arch installation (BTRFS, Hyprland)
 
 ## Preliminary steps
 
@@ -11,7 +11,7 @@ loadkeys slovene
 
 Connect to the internet:
 ```bash
-iwectl
+iwctl
 
 station wlan0 get-networks
 
@@ -51,7 +51,7 @@ n
 ENTER
 #leave default first sector
 ENTER
-# last sector (substract swap partition size)
+# last sector (subtract swap partition size)
 -32G
 
 # new partition: swap
