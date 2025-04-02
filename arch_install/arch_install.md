@@ -86,7 +86,7 @@ mkfs.btrfs /dev/nvme0n1p<partition_number>
 mkswap /dev/nvme0n1p<partition_number>
 
 # mount linux fs
-mount /dev/nvme0n1p<btrfs_partition_number>
+mount /dev/nvme0n1p<btrfs_partition_number> /mnt
 ```
 
 ### Disk mounting
