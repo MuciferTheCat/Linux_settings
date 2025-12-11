@@ -104,9 +104,9 @@ Make 6 subvolumes:
 btrfs subvolume create /mnt/@
 btrfs subvolume create /mnt/@home
 btrfs subvolume create /mnt/@.snapshots
-btrfs subvolume create /mnt/@var/log
-btrfs subvolume create /mnt/@var/cache
-btrfs subvolume create /mnt/@var/tmp
+btrfs subvolume create /mnt/@log
+btrfs subvolume create /mnt/@cache
+btrfs subvolume create /mnt/@tmp
 
 umount /mnt
 ```
@@ -120,11 +120,11 @@ mount -o compress=zstd,subvol=@home /dev/nvme0n1p<btrfs_partition_number> /mnt/h
 mkdir -p /mnt/.snapshots
 mount -o compress=zstd,subvol=@.snapshots /dev/nvme0n1p<btrfs_partition_number> /mnt/.snapshots
 mkdir -p /mnt/var/log
-mount -o compress=zstd,subvol=@var/log /dev/nvme0n1p<btrfs_partition_number> /mnt/var/log
+mount -o compress=zstd,subvol=@log /dev/nvme0n1p<btrfs_partition_number> /mnt/var/log
 mkdir -p /mnt/var/cache
-mount -o compress=zstd,subvol=@var/cache /dev/nvme0n1p<btrfs_partition_number> /mnt/var/cache
+mount -o compress=zstd,subvol=@cache /dev/nvme0n1p<btrfs_partition_number> /mnt/var/cache
 mkdir -p /mnt/var/tmp
-mount -o compress=zstd,subvol=@var/tmp /dev/nvme0n1p<btrfs_partition_number> /mnt/var/tmp
+mount -o compress=zstd,subvol=@tmp /dev/nvme0n1p<btrfs_partition_number> /mnt/var/tmp
 
 # mount efi partition
 mkdir -p /mnt/efi
